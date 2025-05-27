@@ -32,7 +32,7 @@ function writeinfile(content){
 }
 
 // upload krna h data dusri jagah
-function uploadtonewurl(content,cb){
+function uploadtonewurl(content){
     const filename="file1.txt";
     const uploadurl="uploading_url.com";
     console.log("uploading content",filename);
