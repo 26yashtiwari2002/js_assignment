@@ -7,10 +7,9 @@ function download(URL,cb){
         cb(content);
     },8000);
 }
- // URL="downloading_url.com"
 
 //download function ka call
-downloadData(URL, (content) => {
+download(URL, (content) => {
     console.log("Data:", content);
 });
 
@@ -28,10 +27,12 @@ function writeinfile(content,cb){
 // upload krna h data dusri jagah
 function uploadtonewurl(content,cb){
     const filename="file1.txt";
+    const uploadurl="uploading_url.com";
     console.log("uploading content",filename);
     setTimeout(()=>{
+        console.log("uploading to:",uploadurl);
         console.log("uploading done :D");
-        const uploadurl="uploading_url.com";
+        
         cb(content);
     },4000);
 }
