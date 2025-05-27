@@ -7,7 +7,7 @@ function download(URL,cb){
         cb(content);
     },8000);
 }
- URL="downloading_url.com"
+ // URL="downloading_url.com"
 
 //download function ka call
 downloadData(URL, (content) => {
@@ -38,7 +38,7 @@ function uploadtonewurl(content,cb){
 
 
 // final function jo result dikhayega
-download("xyz.com",function process(content)
+download("downloding_url.com",function process(content)
 {
     console.log("downloaded data:",content);
     writeinfile(content,function process(content)
